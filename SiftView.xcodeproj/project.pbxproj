@@ -15,6 +15,7 @@
 		4741B8021E49B798008E5977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4741B8001E49B798008E5977 /* LaunchScreen.storyboard */; };
 		4741B80D1E49B798008E5977 /* SiftViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4741B80C1E49B798008E5977 /* SiftViewTests.m */; };
 		4741B8181E49B798008E5977 /* SiftViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4741B8171E49B798008E5977 /* SiftViewUITests.m */; };
+		4741B8271E49B97D008E5977 /* HCSiftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4741B8261E49B97D008E5977 /* HCSiftView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		4741B8131E49B798008E5977 /* SiftViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiftViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4741B8171E49B798008E5977 /* SiftViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SiftViewUITests.m; sourceTree = "<group>"; };
 		4741B8191E49B798008E5977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4741B8251E49B97D008E5977 /* HCSiftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCSiftView.h; sourceTree = "<group>"; };
+		4741B8261E49B97D008E5977 /* HCSiftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCSiftView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				4741B8001E49B798008E5977 /* LaunchScreen.storyboard */,
 				4741B8031E49B798008E5977 /* Info.plist */,
 				4741B7F21E49B798008E5977 /* Supporting Files */,
+				4741B8251E49B97D008E5977 /* HCSiftView.h */,
+				4741B8261E49B97D008E5977 /* HCSiftView.m */,
 			);
 			path = SiftView;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				4741B7FA1E49B798008E5977 /* ViewController.m in Sources */,
 				4741B7F71E49B798008E5977 /* AppDelegate.m in Sources */,
 				4741B7F41E49B798008E5977 /* main.m in Sources */,
+				4741B8271E49B97D008E5977 /* HCSiftView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
