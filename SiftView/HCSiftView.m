@@ -75,6 +75,7 @@
     [self.backGroundView addGestureRecognizer:bgTap];
     
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(self.frame.origin.x, CGRectGetMaxY(self.frame), kWindowW, 0) style:UITableViewStylePlain];
+    self.tableView.scrollEnabled = NO;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
 
@@ -99,7 +100,6 @@
 
 - (void)titleButtonAction:(UIButton *)btn {
     NSInteger section = btn.tag - BUTTON_TAG_BEGIN;
-    NSLog(@"%lu",section);
     
     if (_currentExtendSection == section) {
         [self hideExtendedView];
@@ -170,6 +170,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.textLabel.text = _dataArr[_currentExtendSection][indexPath.row];
     cell.accessoryType = UITableViewCellAccessoryNone;
     cell.textLabel.font = [UIFont systemFontOfSize:13];
@@ -188,20 +189,14 @@
     [_btnTitleArray setObject:selectedCellTitle atIndexedSubscript:_currentExtendSection];
     
     UIButton *currentBtn = (UIButton *)[self viewWithTag:1000 + _currentExtendSection];
+    
     [currentBtn setTitle:selectedCellTitle forState:UIControlStateNormal];
+    
     if ([self.delegate respondsToSelector:@selector(selectedSection:row:)]) {
         [self.delegate selectedSection:_currentExtendSection row:indexPath.row];
     }
+
     [self hideExtendedView];
 }
-
-
-
-
-
-
-
-
-
 
 @end

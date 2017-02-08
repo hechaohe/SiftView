@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "HCSiftView.h"
-@interface ViewController ()
+@interface ViewController () <HCSiftViewDelegate>
 
 @end
 
@@ -27,10 +27,12 @@
     
 }
 
--(void)choosedAtSection:(NSInteger)section index:(NSInteger)index
-{
-    NSLog(@"点击了%lu的%lu",section,index);
+- (void)selectedSection:(NSInteger)section row:(NSInteger)row {
+    
+    NSLog(@"%lu %lu",section,row);
+
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

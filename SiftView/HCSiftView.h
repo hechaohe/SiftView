@@ -10,7 +10,7 @@
 #define BUTTON_TAG_BEGIN 1000
 #define IMAGE_TAG_BEGIN 2000
 
-#define RGB(R,G,B)    [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1.0]
+
 #define kWindowH            [UIScreen mainScreen].bounds.size.height
 #define kWindowW            [UIScreen mainScreen].bounds.size.width
 
